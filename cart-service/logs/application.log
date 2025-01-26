@@ -1,0 +1,150 @@
+2025-01-25 17:18:26 [main] INFO  c.e.s.cart.CartServiceApplication - Starting CartServiceApplication using Java 21.0.4 on jayaseelan with PID 10956 (C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\cart-service\target\classes started by HP in C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\cart-service)
+2025-01-25 17:18:26 [main] INFO  c.e.s.cart.CartServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-25 17:18:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-25 17:18:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2025-01-25 17:18:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-25 17:18:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2025-01-25 17:18:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2025-01-25 17:18:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2025-01-25 17:18:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-25 17:18:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-01-25 17:18:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-25 17:18:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1316 ms
+2025-01-25 17:18:27 [main] WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-25 17:18:27 [main] INFO  com.hazelcast.system - [192.168.1.15]:5702 [dev] [4.2.5] Hazelcast 4.2.5 (20220427 - 1dbec0d) starting at [192.168.1.15]:5702
+2025-01-25 17:18:28 [main] INFO  c.h.s.d.integration.DiscoveryService - [192.168.1.15]:5702 [dev] [4.2.5] No discovery strategy is applicable for auto-detection
+2025-01-25 17:18:28 [main] INFO  com.hazelcast.instance.impl.Node - [192.168.1.15]:5702 [dev] [4.2.5] Using Multicast discovery
+2025-01-25 17:18:28 [main] WARN  com.hazelcast.cp.CPSubsystem - [192.168.1.15]:5702 [dev] [4.2.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2025-01-25 17:18:28 [main] INFO  c.h.internal.diagnostics.Diagnostics - [192.168.1.15]:5702 [dev] [4.2.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-25 17:18:28 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5702 [dev] [4.2.5] [192.168.1.15]:5702 is STARTING
+2025-01-25 17:18:28 [main] INFO  c.h.i.cluster.impl.MulticastJoiner - [192.168.1.15]:5702 [dev] [4.2.5] Trying to join to discovered node: [192.168.1.15]:5701
+2025-01-25 17:18:28 [hz.cart_hazelcast.IO.thread-in-0] INFO  c.h.i.server.tcp.TcpServerConnection - [192.168.1.15]:5702 [dev] [4.2.5] Initialized new cluster connection between /192.168.1.15:55199 and /192.168.1.15:5701
+2025-01-25 17:18:34 [hz.cart_hazelcast.priority-generic-operation.thread-0] INFO  c.h.internal.cluster.ClusterService - [192.168.1.15]:5702 [dev] [4.2.5] 
+
+Members {size:2, ver:4} [
+	Member [192.168.1.15]:5701 - 0ee5f0aa-97b2-4170-ab90-5225635a385f
+	Member [192.168.1.15]:5702 - cf4df103-bab1-497e-9cf3-f8c5b7694e2e this
+]
+
+2025-01-25 17:18:35 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5702 [dev] [4.2.5] [192.168.1.15]:5702 is STARTED
+2025-01-25 17:18:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-25 17:18:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-01-25 17:18:35 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-25 17:18:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-25 17:18:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-25 17:18:36 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-01-25 17:18:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-25 17:18:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-25 17:18:37 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-25 17:18:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2025-01-25 17:18:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2025-01-25 17:18:38 [main] INFO  c.e.s.cart.CartServiceApplication - Started CartServiceApplication in 12.199 seconds (JVM running for 12.937)
+2025-01-25 17:19:01 [http-nio-8083-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-25 17:19:01 [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-25 17:19:01 [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-01-25 17:19:01 [http-nio-8083-exec-2] INFO  c.e.s.c.L.LoggingFilter - FINISHED PROCESSING : METHOD=GET; REQUESTURI=/order/6; REQUEST PAYLOAD=; RESPONSE CODE=200; RESPONSE={"id":6,"customerId":2,"status":"CREATED","orderDate":"2024-02-06","totalPrice":6000}; TIM TAKEN=235
+2025-01-25 18:13:18 [hz.cart_hazelcast.cached.thread-21] INFO  c.h.i.c.impl.ClusterHeartbeatManager - [192.168.1.15]:5702 [dev] [4.2.5] System clock apparently jumped from 2025-01-25 18:05:13.296 to 2025-01-25 18:13:18.574 since last heartbeat (+480278 ms)
+2025-01-25 18:13:18 [hz.cart_hazelcast.cached.thread-21] WARN  c.h.i.c.impl.ClusterHeartbeatManager - [192.168.1.15]:5702 [dev] [4.2.5] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 480278 ms, Heartbeat-Timeout: 60000 ms
+2025-01-25 18:13:18 [hz.cart_hazelcast.InvocationMonitorThread] WARN  c.h.s.i.o.impl.InvocationMonitor - [192.168.1.15]:5702 [dev] [4.2.5] MonitorInvocationsTask delayed 483582 ms
+2025-01-25 18:13:18 [hz.cart_hazelcast.InvocationMonitorThread] WARN  c.h.s.i.o.impl.InvocationMonitor - [192.168.1.15]:5702 [dev] [4.2.5] BroadcastOperationControlTask delayed 470573 ms
+2025-01-25 18:13:20 [hz.cart_hazelcast.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [192.168.1.15]:5702 [dev] [4.2.5] processors=8, physical.memory.total=15.8G, physical.memory.free=3.7G, swap.space.total=0, swap.space.free=0, heap.memory.used=69.9M, heap.memory.free=50.1M, heap.memory.total=120.0M, heap.memory.max=4.0G, heap.memory.used/total=58.23%, heap.memory.used/max=1.73%, minor.gc.count=21, minor.gc.time=147ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=10, unknown.gc.time=26ms, load.process=0.00%, load.system=100.00%, load.systemAverage=n/a thread.count=109, thread.peakCount=109, cluster.timeDiff=-481947, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=15204, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=1, clientEndpoint.count=0, connection.active.count=1, client.connection.count=0, connection.count=1
+2025-01-25 18:13:40 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m33s598ms624µs400ns).
+2025-01-25 18:37:41 [hz.cart_hazelcast.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [192.168.1.15]:5702 [dev] [4.2.5] processors=8, physical.memory.total=15.8G, physical.memory.free=2.4G, swap.space.total=0, swap.space.free=0, heap.memory.used=87.4M, heap.memory.free=32.6M, heap.memory.total=120.0M, heap.memory.max=4.0G, heap.memory.used/total=72.82%, heap.memory.used/max=2.16%, minor.gc.count=22, minor.gc.time=155ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=12, unknown.gc.time=152ms, load.process=0.00%, load.system=72.09%, load.systemAverage=n/a thread.count=80, thread.peakCount=109, cluster.timeDiff=-481496, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=22479, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=1, clientEndpoint.count=0, connection.active.count=1, client.connection.count=0, connection.count=1
+2025-01-25 18:50:21 [hz.cart_hazelcast.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [192.168.1.15]:5702 [dev] [4.2.5] processors=8, physical.memory.total=15.8G, physical.memory.free=3.0G, swap.space.total=0, swap.space.free=0, heap.memory.used=68.4M, heap.memory.free=51.6M, heap.memory.total=120.0M, heap.memory.max=4.0G, heap.memory.used/total=56.98%, heap.memory.used/max=1.69%, minor.gc.count=23, minor.gc.time=163ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=12, unknown.gc.time=152ms, load.process=0.00%, load.system=97.50%, load.systemAverage=n/a thread.count=82, thread.peakCount=109, cluster.timeDiff=-481497, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=26277, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=1, clientEndpoint.count=0, connection.active.count=1, client.connection.count=0, connection.count=1
+2025-01-25 21:26:49 [hz.cart_hazelcast.cached.thread-22] INFO  c.h.i.c.impl.ClusterHeartbeatManager - [192.168.1.15]:5702 [dev] [4.2.5] System clock apparently jumped from 2025-01-25 19:32:18.277 to 2025-01-25 21:26:49.505 since last heartbeat (+6866228 ms)
+2025-01-25 21:26:49 [hz.cart_hazelcast.cached.thread-22] WARN  c.h.i.c.impl.ClusterHeartbeatManager - [192.168.1.15]:5702 [dev] [4.2.5] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 6866228 ms, Heartbeat-Timeout: 60000 ms
+2025-01-25 21:26:49 [hz.cart_hazelcast.InvocationMonitorThread] WARN  c.h.s.i.o.impl.InvocationMonitor - [192.168.1.15]:5702 [dev] [4.2.5] MonitorInvocationsTask delayed 6870632 ms
+2025-01-25 21:26:49 [hz.cart_hazelcast.InvocationMonitorThread] WARN  c.h.s.i.o.impl.InvocationMonitor - [192.168.1.15]:5702 [dev] [4.2.5] BroadcastOperationControlTask delayed 6861623 ms
+2025-01-25 21:26:53 [hz.cart_hazelcast.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [192.168.1.15]:5702 [dev] [4.2.5] processors=8, physical.memory.total=15.8G, physical.memory.free=2.1G, swap.space.total=0, swap.space.free=0, heap.memory.used=60.2M, heap.memory.free=59.8M, heap.memory.total=120.0M, heap.memory.max=4.0G, heap.memory.used/total=50.14%, heap.memory.used/max=1.49%, minor.gc.count=26, minor.gc.time=228ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=14, unknown.gc.time=330ms, load.process=0.00%, load.system=100.00%, load.systemAverage=n/a thread.count=111, thread.peakCount=111, cluster.timeDiff=-7349038, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=39507, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=1, clientEndpoint.count=0, connection.active.count=1, client.connection.count=0, connection.count=1
+2025-01-25 21:27:12 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h55m647ms502µs500ns).
+2025-01-25 21:27:47 [http-nio-8083-exec-5] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class com.example.shoppingcart.cart.event.OrderPlacedSerializer
+
+2025-01-25 21:27:47 [http-nio-8083-exec-5] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-01-25 21:27:47 [http-nio-8083-exec-5] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2025-01-25 21:27:47 [http-nio-8083-exec-5] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2025-01-25 21:27:47 [http-nio-8083-exec-5] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737811667690
+2025-01-25 21:27:48 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition order-placed-0 to 0 since the associated topicId changed from null to 30Jq-_GES4u2zrpp-vWvpg
+2025-01-25 21:27:48 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: xXNfFJ7nRbiCPJ3X5HqIyg
+2025-01-25 21:27:48 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 1009 with epoch 0
+2025-01-25 21:27:48 [http-nio-8083-exec-5] INFO  c.e.s.c.L.LoggingFilter - FINISHED PROCESSING : METHOD=POST; REQUESTURI=/order/create; REQUEST PAYLOAD={
+  "id":7,
+  "customerId": 16,
+  "status": "CREATED",
+  "orderDate": "2023-02-06",
+  "totalPrice": 6000
+}; RESPONSE CODE=200; RESPONSE={"id":13,"customerId":16,"status":"CREATED","orderDate":"2023-02-06","totalPrice":6000}; TIM TAKEN=1015
+2025-01-25 21:59:17 [RMI TCP Connection(172)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-25 21:59:17 [RMI TCP Connection(172)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-25 21:59:17 [RMI TCP Connection(172)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-25 21:59:17 [RMI TCP Connection(172)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

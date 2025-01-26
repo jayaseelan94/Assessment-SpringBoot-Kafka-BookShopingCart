@@ -162,3 +162,22 @@ Members {size:2, ver:4} [
 	Member [192.168.1.15]:5701 - 04201d6f-607d-40ba-b35e-7bec15556bc1
 ]
 
+2025-01-26 18:33:05 [hz.cart_hazelcast.IO.thread-in-2] INFO  c.h.i.server.tcp.TcpServerConnection - [192.168.1.15]:5702 [dev] [4.2.5] Connection[id=2, /[0:0:0:0:0:0:0:0]:53613->/192.168.1.15:5701, qualifier=null, endpoint=[192.168.1.15]:5701, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: Connection closed by the other side
+2025-01-26 18:33:05 [hz.cart_hazelcast.cached.thread-13] INFO  c.h.i.server.tcp.TcpServerConnector - [192.168.1.15]:5702 [dev] [4.2.5] Connecting to /192.168.1.15:5701, timeout: 10000, bind-any: true
+2025-01-26 18:33:07 [RMI TCP Connection(28)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Revoke previously assigned partitions order-placed-0
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: partitions revoked: [order-placed-0]
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Member consumer-shopping-cart-group-1-4a1ad98f-6aaa-4370-a329-6bba54c33967 sending LeaveGroup request to coordinator jayaseelan:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting generation due to: consumer pro-actively leaving the group
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting generation due to: consumer pro-actively leaving the group
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-shopping-cart-group-1 unregistered
+2025-01-26 18:33:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: Consumer stopped
+2025-01-26 18:33:07 [RMI TCP Connection(28)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-26 18:33:07 [RMI TCP Connection(28)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-26 18:33:07 [RMI TCP Connection(28)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
