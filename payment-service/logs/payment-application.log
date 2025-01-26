@@ -1,0 +1,164 @@
+2025-01-26 18:13:03 [main] INFO  c.e.s.p.PaymentServiceApplication - Starting PaymentServiceApplication using Java 21.0.4 on jayaseelan with PID 15700 (C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service\target\classes started by HP in C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service)
+2025-01-26 18:13:03 [main] INFO  c.e.s.p.PaymentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-26 18:13:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 18:13:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2025-01-26 18:13:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 18:13:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2025-01-26 18:13:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2025-01-26 18:13:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2025-01-26 18:13:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-26 18:13:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-01-26 18:13:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-26 18:13:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2247 ms
+2025-01-26 18:13:05 [main] WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-26 18:13:05 [main] INFO  com.hazelcast.system - [192.168.1.15]:5702 [dev] [4.2.5] Hazelcast 4.2.5 (20220427 - 1dbec0d) starting at [192.168.1.15]:5702
+2025-01-26 18:13:06 [main] INFO  c.h.s.d.integration.DiscoveryService - [192.168.1.15]:5702 [dev] [4.2.5] No discovery strategy is applicable for auto-detection
+2025-01-26 18:13:06 [main] INFO  com.hazelcast.instance.impl.Node - [192.168.1.15]:5702 [dev] [4.2.5] Using Multicast discovery
+2025-01-26 18:13:06 [main] WARN  com.hazelcast.cp.CPSubsystem - [192.168.1.15]:5702 [dev] [4.2.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2025-01-26 18:13:07 [main] INFO  c.h.internal.diagnostics.Diagnostics - [192.168.1.15]:5702 [dev] [4.2.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-26 18:13:07 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5702 [dev] [4.2.5] [192.168.1.15]:5702 is STARTING
+2025-01-26 18:13:07 [main] INFO  c.h.i.cluster.impl.MulticastJoiner - [192.168.1.15]:5702 [dev] [4.2.5] Trying to join to discovered node: [192.168.1.15]:5701
+2025-01-26 18:13:07 [hz.cart_hazelcast.IO.thread-in-0] INFO  c.h.i.server.tcp.TcpServerConnection - [192.168.1.15]:5702 [dev] [4.2.5] Initialized new cluster connection between /192.168.1.15:53551 and /192.168.1.15:5701
+2025-01-26 18:13:13 [hz.cart_hazelcast.priority-generic-operation.thread-0] INFO  c.h.internal.cluster.ClusterService - [192.168.1.15]:5702 [dev] [4.2.5] 
+
+Members {size:2, ver:2} [
+	Member [192.168.1.15]:5701 - 6a53333a-0f6f-4d17-82d6-31c630dcdd7e
+	Member [192.168.1.15]:5702 - 2bb976ef-2ebe-4f50-8bcd-9e2514f0be25 this
+]
+
+2025-01-26 18:13:14 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5702 [dev] [4.2.5] [192.168.1.15]:5702 is STARTED
+2025-01-26 18:13:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-26 18:13:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-01-26 18:13:14 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-26 18:13:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-26 18:13:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-26 18:13:15 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-01-26 18:13:15 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-26 18:13:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-26 18:13:15 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-26 18:13:16 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-shopping-cart-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = shopping-cart-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.example.shoppingcart.payment.event.OrderPlacedDeserializer
+
+2025-01-26 18:13:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2025-01-26 18:13:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2025-01-26 18:13:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737886396830
+2025-01-26 18:13:16 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Subscribed to topic(s): order-placed
+2025-01-26 18:13:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2025-01-26 18:13:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2025-01-26 18:13:16 [main] INFO  c.e.s.p.PaymentServiceApplication - Started PaymentServiceApplication in 14.264 seconds (JVM running for 15.433)
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting the last seen epoch of partition order-placed-0 to 0 since the associated topicId changed from null to 30Jq-_GES4u2zrpp-vWvpg
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Cluster ID: xXNfFJ7nRbiCPJ3X5HqIyg
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Discovered group coordinator jayaseelan:9092 (id: 2147483647 rack: null)
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] (Re-)joining group
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: need to re-join with the given member-id
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] (Re-)joining group
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Successfully joined group with generation Generation{generationId=23, memberId='consumer-shopping-cart-group-1-4a1ad98f-6aaa-4370-a329-6bba54c33967', protocol='range'}
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Finished assignment for group at generation 23: {consumer-shopping-cart-group-1-4a1ad98f-6aaa-4370-a329-6bba54c33967=Assignment(partitions=[order-placed-0])}
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Successfully synced group in generation Generation{generationId=23, memberId='consumer-shopping-cart-group-1-4a1ad98f-6aaa-4370-a329-6bba54c33967', protocol='range'}
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Notifying assignor about the new Assignment(partitions=[order-placed-0])
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Adding newly assigned partitions: order-placed-0
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Setting offset for partition order-placed-0 to the committed offset FetchPosition{offset=32, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[jayaseelan:9092 (id: 0 rack: null)], epoch=0}}
+2025-01-26 18:13:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: partitions assigned: [order-placed-0]
+2025-01-26 18:15:39 [hz.cart_hazelcast.IO.thread-in-0] INFO  c.h.i.server.tcp.TcpServerConnection - [192.168.1.15]:5702 [dev] [4.2.5] Connection[id=1, /192.168.1.15:53551->/192.168.1.15:5701, qualifier=null, endpoint=[192.168.1.15]:5701, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: Connection closed by the other side
+2025-01-26 18:15:39 [hz.cart_hazelcast.cached.thread-1] INFO  c.h.i.server.tcp.TcpServerConnector - [192.168.1.15]:5702 [dev] [4.2.5] Connecting to /192.168.1.15:5701, timeout: 10000, bind-any: true
+2025-01-26 18:15:41 [hz.cart_hazelcast.cached.thread-1] INFO  c.h.i.server.tcp.TcpServerConnector - [192.168.1.15]:5702 [dev] [4.2.5] Could not connect to: /192.168.1.15:5701. Reason: IOException[Connection refused: getsockopt to address /192.168.1.15:5701]
+2025-01-26 18:15:41 [hz.cart_hazelcast.cached.thread-1] INFO  c.h.i.server.tcp.TcpServerConnector - [192.168.1.15]:5702 [dev] [4.2.5] Connecting to /192.168.1.15:5701, timeout: 10000, bind-any: true
+2025-01-26 18:15:43 [hz.cart_hazelcast.MulticastThread] WARN  c.h.i.c.impl.NodeMulticastListener - [192.168.1.15]:5702 [dev] [4.2.5] New join request has been received from current master. Suspecting [192.168.1.15]:5701
+2025-01-26 18:15:43 [hz.cart_hazelcast.MulticastThread] WARN  c.h.i.cluster.impl.MembershipManager - [192.168.1.15]:5702 [dev] [4.2.5] Member [192.168.1.15]:5701 - 6a53333a-0f6f-4d17-82d6-31c630dcdd7e is suspected to be dead for reason: New join request has been received from current master. Suspecting [192.168.1.15]:5701
+2025-01-26 18:15:43 [hz.cart_hazelcast.MulticastThread] INFO  c.h.i.cluster.impl.MembershipManager - [192.168.1.15]:5702 [dev] [4.2.5] Starting mastership claim process...
+2025-01-26 18:15:43 [hz.cart_hazelcast.MulticastThread] INFO  c.h.i.cluster.impl.MembershipManager - [192.168.1.15]:5702 [dev] [4.2.5] Local MembersView{version=2, members=[MemberInfo{address=[192.168.1.15]:5701, uuid=6a53333a-0f6f-4d17-82d6-31c630dcdd7e, liteMember=false, memberListJoinVersion=1}, MemberInfo{address=[192.168.1.15]:5702, uuid=2bb976ef-2ebe-4f50-8bcd-9e2514f0be25, liteMember=false, memberListJoinVersion=2}]} with suspected members: [Member [192.168.1.15]:5701 - 6a53333a-0f6f-4d17-82d6-31c630dcdd7e] and initial addresses to ask: []
+2025-01-26 18:15:43 [hz.cart_hazelcast.cached.thread-3] INFO  c.h.internal.cluster.ClusterService - [192.168.1.15]:5702 [dev] [4.2.5] 
+
+Members {size:1, ver:3} [
+	Member [192.168.1.15]:5702 - 2bb976ef-2ebe-4f50-8bcd-9e2514f0be25 this
+]
+
+2025-01-26 18:15:43 [hz.cart_hazelcast.cached.thread-3] INFO  c.h.i.cluster.impl.MembershipManager - [192.168.1.15]:5702 [dev] [4.2.5] Mastership is claimed with: MembersView{version=3, members=[MemberInfo{address=[192.168.1.15]:5702, uuid=2bb976ef-2ebe-4f50-8bcd-9e2514f0be25, liteMember=false, memberListJoinVersion=2}]}
+2025-01-26 18:15:43 [hz.cart_hazelcast.migration] INFO  c.h.i.p.InternalPartitionService - [192.168.1.15]:5702 [dev] [4.2.5] Fetching partition tables from cluster to determine the most recent one... Local stamp: 0
+2025-01-26 18:15:43 [hz.cart_hazelcast.cached.thread-1] INFO  c.h.t.TransactionManagerService - [192.168.1.15]:5702 [dev] [4.2.5] Committing/rolling-back live transactions of [192.168.1.15]:5701, UUID: 6a53333a-0f6f-4d17-82d6-31c630dcdd7e
+2025-01-26 18:15:43 [hz.cart_hazelcast.migration] INFO  c.h.i.p.InternalPartitionService - [192.168.1.15]:5702 [dev] [4.2.5] Most recent partition table is determined.
+2025-01-26 18:15:43 [hz.cart_hazelcast.IO.thread-in-2] INFO  c.h.i.server.tcp.TcpServerConnection - [192.168.1.15]:5702 [dev] [4.2.5] Initialized new cluster connection between /[0:0:0:0:0:0:0:0]:53613 and /192.168.1.15:5701
+2025-01-26 18:15:48 [hz.cart_hazelcast.priority-generic-operation.thread-0] INFO  c.h.internal.cluster.ClusterService - [192.168.1.15]:5702 [dev] [4.2.5] 
+
+Members {size:2, ver:4} [
+	Member [192.168.1.15]:5702 - 2bb976ef-2ebe-4f50-8bcd-9e2514f0be25 this
+	Member [192.168.1.15]:5701 - 04201d6f-607d-40ba-b35e-7bec15556bc1
+]
+

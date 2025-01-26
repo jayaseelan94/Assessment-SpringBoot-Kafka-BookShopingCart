@@ -1,0 +1,891 @@
+2025-01-26 01:47:19 [main] INFO  c.e.s.p.PaymentServiceApplication - Starting PaymentServiceApplication using Java 21.0.4 on jayaseelan with PID 15688 (C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service\target\classes started by HP in C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service)
+2025-01-26 01:47:19 [main] INFO  c.e.s.p.PaymentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-26 01:47:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 01:47:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2025-01-26 01:47:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 01:47:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2025-01-26 01:47:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2025-01-26 01:47:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2025-01-26 01:47:21 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-26 01:47:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-01-26 01:47:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-26 01:47:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1447 ms
+2025-01-26 01:47:21 [main] WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-26 01:47:21 [main] INFO  com.hazelcast.system - [192.168.1.15]:5701 [dev] [4.2.5] Hazelcast 4.2.5 (20220427 - 1dbec0d) starting at [192.168.1.15]:5701
+2025-01-26 01:47:21 [main] INFO  c.h.s.d.integration.DiscoveryService - [192.168.1.15]:5701 [dev] [4.2.5] No discovery strategy is applicable for auto-detection
+2025-01-26 01:47:21 [main] INFO  com.hazelcast.instance.impl.Node - [192.168.1.15]:5701 [dev] [4.2.5] Using Multicast discovery
+2025-01-26 01:47:21 [main] WARN  com.hazelcast.cp.CPSubsystem - [192.168.1.15]:5701 [dev] [4.2.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2025-01-26 01:47:22 [main] INFO  c.h.internal.diagnostics.Diagnostics - [192.168.1.15]:5701 [dev] [4.2.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-26 01:47:22 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5701 [dev] [4.2.5] [192.168.1.15]:5701 is STARTING
+2025-01-26 01:47:24 [main] INFO  c.h.internal.cluster.ClusterService - [192.168.1.15]:5701 [dev] [4.2.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.15]:5701 - 509bf3a3-cfaf-4818-8026-33550aa41b95 this
+]
+
+2025-01-26 01:47:24 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5701 [dev] [4.2.5] [192.168.1.15]:5701 is STARTED
+2025-01-26 01:47:24 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-26 01:47:24 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-01-26 01:47:25 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-26 01:47:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-26 01:47:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-26 01:47:25 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-01-26 01:47:25 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-26 01:47:25 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-26 01:47:26 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-26 01:47:27 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-shopping-cart-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = shopping-cart-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.example.shoppingcart.payment.event.OrderPlacedDeserializer
+
+2025-01-26 01:47:27 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2025-01-26 01:47:27 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2025-01-26 01:47:27 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737827247235
+2025-01-26 01:47:27 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Subscribed to topic(s): order-placed
+2025-01-26 01:47:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2025-01-26 01:47:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2025-01-26 01:47:27 [main] INFO  c.e.s.p.PaymentServiceApplication - Started PaymentServiceApplication in 7.932 seconds (JVM running for 8.756)
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting the last seen epoch of partition order-placed-0 to 0 since the associated topicId changed from null to 30Jq-_GES4u2zrpp-vWvpg
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Cluster ID: xXNfFJ7nRbiCPJ3X5HqIyg
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Discovered group coordinator jayaseelan:9092 (id: 2147483647 rack: null)
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] (Re-)joining group
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: need to re-join with the given member-id
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] (Re-)joining group
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Successfully joined group with generation Generation{generationId=17, memberId='consumer-shopping-cart-group-1-25d09885-ff91-4a7b-b4f5-c763f4eef7df', protocol='range'}
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Finished assignment for group at generation 17: {consumer-shopping-cart-group-1-25d09885-ff91-4a7b-b4f5-c763f4eef7df=Assignment(partitions=[order-placed-0])}
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Successfully synced group in generation Generation{generationId=17, memberId='consumer-shopping-cart-group-1-25d09885-ff91-4a7b-b4f5-c763f4eef7df', protocol='range'}
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Notifying assignor about the new Assignment(partitions=[order-placed-0])
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Adding newly assigned partitions: order-placed-0
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Setting offset for partition order-placed-0 to the committed offset FetchPosition{offset=13, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[jayaseelan:9092 (id: 0 rack: null)], epoch=0}}
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: partitions assigned: [order-placed-0]
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 1
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 1
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 1
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 1
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 2
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 5
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 6
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 7
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 8
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 9
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 10
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 11
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 12
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 13
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 14
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 15
+2025-01-26 01:47:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 16
+2025-01-26 01:48:08 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Revoke previously assigned partitions order-placed-0
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: partitions revoked: [order-placed-0]
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Member consumer-shopping-cart-group-1-25d09885-ff91-4a7b-b4f5-c763f4eef7df sending LeaveGroup request to coordinator jayaseelan:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting generation due to: consumer pro-actively leaving the group
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting generation due to: consumer pro-actively leaving the group
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-shopping-cart-group-1 unregistered
+2025-01-26 01:48:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: Consumer stopped
+2025-01-26 01:48:08 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-26 01:48:08 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-26 01:48:08 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-26 17:43:16 [main] INFO  c.e.s.p.PaymentServiceApplication - Starting PaymentServiceApplication using Java 21.0.4 on jayaseelan with PID 16540 (C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service\target\classes started by HP in C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service)
+2025-01-26 17:43:16 [main] INFO  c.e.s.p.PaymentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-26 17:43:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 17:43:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2025-01-26 17:43:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 17:43:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2025-01-26 17:43:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2025-01-26 17:43:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2025-01-26 17:43:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-26 17:43:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-01-26 17:43:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-26 17:43:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1447 ms
+2025-01-26 17:43:18 [main] WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-26 17:43:18 [main] INFO  com.hazelcast.system - [192.168.1.15]:5702 [dev] [4.2.5] Hazelcast 4.2.5 (20220427 - 1dbec0d) starting at [192.168.1.15]:5702
+2025-01-26 17:43:18 [main] INFO  c.h.s.d.integration.DiscoveryService - [192.168.1.15]:5702 [dev] [4.2.5] No discovery strategy is applicable for auto-detection
+2025-01-26 17:43:18 [main] INFO  com.hazelcast.instance.impl.Node - [192.168.1.15]:5702 [dev] [4.2.5] Using Multicast discovery
+2025-01-26 17:43:18 [main] WARN  com.hazelcast.cp.CPSubsystem - [192.168.1.15]:5702 [dev] [4.2.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2025-01-26 17:43:19 [main] INFO  c.h.internal.diagnostics.Diagnostics - [192.168.1.15]:5702 [dev] [4.2.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-26 17:43:19 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5702 [dev] [4.2.5] [192.168.1.15]:5702 is STARTING
+2025-01-26 17:43:19 [main] INFO  c.h.i.cluster.impl.MulticastJoiner - [192.168.1.15]:5702 [dev] [4.2.5] Trying to join to discovered node: [192.168.1.15]:5701
+2025-01-26 17:43:19 [hz.cart_hazelcast.IO.thread-in-0] INFO  c.h.i.server.tcp.TcpServerConnection - [192.168.1.15]:5702 [dev] [4.2.5] Initialized new cluster connection between /192.168.1.15:53075 and /192.168.1.15:5701
+2025-01-26 17:43:25 [hz.cart_hazelcast.generic-operation.thread-2] INFO  c.h.internal.cluster.ClusterService - [192.168.1.15]:5702 [dev] [4.2.5] 
+
+Members {size:2, ver:2} [
+	Member [192.168.1.15]:5701 - bbc3a684-05e1-4f0c-a238-2183c95b000e
+	Member [192.168.1.15]:5702 - f549de09-a7c9-43da-82d8-0d38cd9a6683 this
+]
+
+2025-01-26 17:43:26 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5702 [dev] [4.2.5] [192.168.1.15]:5702 is STARTED
+2025-01-26 17:43:26 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-26 17:43:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-01-26 17:43:26 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-26 17:43:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-26 17:43:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-26 17:43:27 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-01-26 17:43:27 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-26 17:43:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-26 17:43:28 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-26 17:43:28 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-shopping-cart-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = shopping-cart-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.example.shoppingcart.payment.event.OrderPlacedDeserializer
+
+2025-01-26 17:43:29 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2025-01-26 17:43:29 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2025-01-26 17:43:29 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737884609033
+2025-01-26 17:43:29 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Subscribed to topic(s): order-placed
+2025-01-26 17:43:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2025-01-26 17:43:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2025-01-26 17:43:29 [main] INFO  c.e.s.p.PaymentServiceApplication - Started PaymentServiceApplication in 12.608 seconds (JVM running for 13.427)
+2025-01-26 17:43:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:31 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:31 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:34 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:34 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:35 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:35 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:37 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:37 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:39 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:39 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:40 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:40 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:42 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:42 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:44 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:44 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:45 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:45 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:46 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:46 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:43:47 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting generation due to: consumer pro-actively leaving the group
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting generation due to: consumer pro-actively leaving the group
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-shopping-cart-group-1 unregistered
+2025-01-26 17:43:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: Consumer stopped
+2025-01-26 17:43:47 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-26 17:43:47 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-26 17:43:47 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-26 17:44:39 [main] INFO  c.e.s.p.PaymentServiceApplication - Starting PaymentServiceApplication using Java 21.0.4 on jayaseelan with PID 21636 (C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service\target\classes started by HP in C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service)
+2025-01-26 17:44:39 [main] INFO  c.e.s.p.PaymentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-26 17:44:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 17:44:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2025-01-26 17:44:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 17:44:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2025-01-26 17:44:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2025-01-26 17:44:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2025-01-26 17:44:40 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-26 17:44:40 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-01-26 17:44:40 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-26 17:44:40 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1322 ms
+2025-01-26 17:44:40 [main] WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-26 17:44:40 [main] INFO  com.hazelcast.system - [192.168.1.15]:5702 [dev] [4.2.5] Hazelcast 4.2.5 (20220427 - 1dbec0d) starting at [192.168.1.15]:5702
+2025-01-26 17:44:41 [main] INFO  c.h.s.d.integration.DiscoveryService - [192.168.1.15]:5702 [dev] [4.2.5] No discovery strategy is applicable for auto-detection
+2025-01-26 17:44:41 [main] INFO  com.hazelcast.instance.impl.Node - [192.168.1.15]:5702 [dev] [4.2.5] Using Multicast discovery
+2025-01-26 17:44:41 [main] WARN  com.hazelcast.cp.CPSubsystem - [192.168.1.15]:5702 [dev] [4.2.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2025-01-26 17:44:41 [main] INFO  c.h.internal.diagnostics.Diagnostics - [192.168.1.15]:5702 [dev] [4.2.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-26 17:44:41 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5702 [dev] [4.2.5] [192.168.1.15]:5702 is STARTING
+2025-01-26 17:44:41 [main] INFO  c.h.i.cluster.impl.MulticastJoiner - [192.168.1.15]:5702 [dev] [4.2.5] Trying to join to discovered node: [192.168.1.15]:5701
+2025-01-26 17:44:41 [hz.cart_hazelcast.IO.thread-in-0] INFO  c.h.i.server.tcp.TcpServerConnection - [192.168.1.15]:5702 [dev] [4.2.5] Initialized new cluster connection between /192.168.1.15:53140 and /192.168.1.15:5701
+2025-01-26 17:44:47 [hz.cart_hazelcast.priority-generic-operation.thread-0] INFO  c.h.internal.cluster.ClusterService - [192.168.1.15]:5702 [dev] [4.2.5] 
+
+Members {size:2, ver:4} [
+	Member [192.168.1.15]:5701 - bbc3a684-05e1-4f0c-a238-2183c95b000e
+	Member [192.168.1.15]:5702 - 23b1c17c-46bc-4f6a-918f-6e75cb147db8 this
+]
+
+2025-01-26 17:44:48 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5702 [dev] [4.2.5] [192.168.1.15]:5702 is STARTED
+2025-01-26 17:44:48 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-26 17:44:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-01-26 17:44:49 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-26 17:44:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-26 17:44:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-26 17:44:49 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-01-26 17:44:50 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-26 17:44:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-26 17:44:50 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-26 17:44:51 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-shopping-cart-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = shopping-cart-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.example.shoppingcart.payment.event.OrderPlacedDeserializer
+
+2025-01-26 17:44:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2025-01-26 17:44:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2025-01-26 17:44:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737884691341
+2025-01-26 17:44:51 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Subscribed to topic(s): order-placed
+2025-01-26 17:44:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2025-01-26 17:44:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2025-01-26 17:44:51 [main] INFO  c.e.s.p.PaymentServiceApplication - Started PaymentServiceApplication in 12.396 seconds (JVM running for 13.25)
+2025-01-26 17:44:51 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:51 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:44:51 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:51 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:44:51 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:51 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:44:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:44:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:44:53 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:53 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:44:54 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:54 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:44:55 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:55 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:44:56 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:56 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:44:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:44:58 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:58 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:44:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:44:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:00 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:00 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:01 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:01 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:02 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:02 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:03 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:03 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:04 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:04 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:05 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:05 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:06 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:06 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:07 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:08 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:09 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:09 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:10 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:10 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:11 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:11 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:13 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:13 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:14 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:14 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:15 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:15 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:16 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:16 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:17 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:18 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:18 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:19 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:19 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:21 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:21 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:22 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:22 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:23 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:23 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:24 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:24 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:25 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:25 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:26 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:26 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:31 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:31 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:34 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:34 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:35 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:35 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:37 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:37 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-01-26 17:45:38 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting generation due to: consumer pro-actively leaving the group
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting generation due to: consumer pro-actively leaving the group
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-shopping-cart-group-1 unregistered
+2025-01-26 17:45:38 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: Consumer stopped
+2025-01-26 17:45:38 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-26 17:45:38 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-26 17:45:38 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-26 17:46:39 [main] INFO  c.e.s.p.PaymentServiceApplication - Starting PaymentServiceApplication using Java 21.0.4 on jayaseelan with PID 23048 (C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service\target\classes started by HP in C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service)
+2025-01-26 17:46:39 [main] INFO  c.e.s.p.PaymentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-26 17:46:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 17:46:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2025-01-26 17:46:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 17:46:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2025-01-26 17:46:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2025-01-26 17:46:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2025-01-26 17:46:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-26 17:46:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-01-26 17:46:41 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-26 17:46:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1330 ms
+2025-01-26 17:46:41 [main] WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-26 17:46:41 [main] INFO  com.hazelcast.system - [192.168.1.15]:5701 [dev] [4.2.5] Hazelcast 4.2.5 (20220427 - 1dbec0d) starting at [192.168.1.15]:5701
+2025-01-26 17:46:41 [main] INFO  c.h.s.d.integration.DiscoveryService - [192.168.1.15]:5701 [dev] [4.2.5] No discovery strategy is applicable for auto-detection
+2025-01-26 17:46:41 [main] INFO  com.hazelcast.instance.impl.Node - [192.168.1.15]:5701 [dev] [4.2.5] Using Multicast discovery
+2025-01-26 17:46:41 [main] WARN  com.hazelcast.cp.CPSubsystem - [192.168.1.15]:5701 [dev] [4.2.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2025-01-26 17:46:42 [main] INFO  c.h.internal.diagnostics.Diagnostics - [192.168.1.15]:5701 [dev] [4.2.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-26 17:46:42 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5701 [dev] [4.2.5] [192.168.1.15]:5701 is STARTING
+2025-01-26 17:46:44 [main] INFO  c.h.internal.cluster.ClusterService - [192.168.1.15]:5701 [dev] [4.2.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.15]:5701 - 6857d258-0cf4-41ce-b0a3-81a7e38e34af this
+]
+
+2025-01-26 17:46:44 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5701 [dev] [4.2.5] [192.168.1.15]:5701 is STARTED
+2025-01-26 17:46:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-26 17:46:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-01-26 17:46:45 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-26 17:46:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-26 17:46:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-26 17:46:45 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-01-26 17:46:46 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-26 17:46:46 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-26 17:46:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-26 17:46:47 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-shopping-cart-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = shopping-cart-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.example.shoppingcart.payment.event.OrderPlacedDeserializer
+
+2025-01-26 17:46:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2025-01-26 17:46:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2025-01-26 17:46:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737884807283
+2025-01-26 17:46:47 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Subscribed to topic(s): order-placed
+2025-01-26 17:46:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2025-01-26 17:46:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2025-01-26 17:46:47 [main] INFO  c.e.s.p.PaymentServiceApplication - Started PaymentServiceApplication in 7.841 seconds (JVM running for 8.621)
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting the last seen epoch of partition order-placed-0 to 0 since the associated topicId changed from null to 30Jq-_GES4u2zrpp-vWvpg
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Cluster ID: xXNfFJ7nRbiCPJ3X5HqIyg
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Discovered group coordinator jayaseelan:9092 (id: 2147483647 rack: null)
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] (Re-)joining group
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: need to re-join with the given member-id
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] (Re-)joining group
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Successfully joined group with generation Generation{generationId=19, memberId='consumer-shopping-cart-group-1-04460e26-8711-40f6-9aa3-a2bfdbf0fa5d', protocol='range'}
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Finished assignment for group at generation 19: {consumer-shopping-cart-group-1-04460e26-8711-40f6-9aa3-a2bfdbf0fa5d=Assignment(partitions=[order-placed-0])}
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Successfully synced group in generation Generation{generationId=19, memberId='consumer-shopping-cart-group-1-04460e26-8711-40f6-9aa3-a2bfdbf0fa5d', protocol='range'}
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Notifying assignor about the new Assignment(partitions=[order-placed-0])
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Adding newly assigned partitions: order-placed-0
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Setting offset for partition order-placed-0 to the committed offset FetchPosition{offset=30, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[jayaseelan:9092 (id: 0 rack: null)], epoch=0}}
+2025-01-26 17:46:47 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: partitions assigned: [order-placed-0]
+2025-01-26 17:47:29 [hz.cart_hazelcast.IO.thread-in-0] INFO  c.h.i.server.tcp.TcpServerConnection - [192.168.1.15]:5701 [dev] [4.2.5] Initialized new cluster connection between /192.168.1.15:5701 and /192.168.1.15:53271
+2025-01-26 17:47:35 [hz.cart_hazelcast.priority-generic-operation.thread-0] INFO  c.h.internal.cluster.ClusterService - [192.168.1.15]:5701 [dev] [4.2.5] 
+
+Members {size:2, ver:2} [
+	Member [192.168.1.15]:5701 - 6857d258-0cf4-41ce-b0a3-81a7e38e34af this
+	Member [192.168.1.15]:5702 - 47e0fc02-94b7-4a70-8c59-e98dbdc6d52f
+]
+
+2025-01-26 17:48:58 [hz.cart_hazelcast.priority-generic-operation.thread-0] INFO  c.h.i.p.impl.PartitionStateManager - [192.168.1.15]:5701 [dev] [4.2.5] Initializing cluster partition table arrangement...
+2025-01-26 17:48:58 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.s.impl.PaymentBusinessImpl - Entering PaymentBusinessImpl processPayment:
+2025-01-26 17:48:58 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.s.impl.PaymentBusinessImpl - Entering PaymentBusinessImpl save:
+2025-01-26 17:48:58 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 19
+2025-01-26 17:50:12 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Revoke previously assigned partitions order-placed-0
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: partitions revoked: [order-placed-0]
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Member consumer-shopping-cart-group-1-04460e26-8711-40f6-9aa3-a2bfdbf0fa5d sending LeaveGroup request to coordinator jayaseelan:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting generation due to: consumer pro-actively leaving the group
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting generation due to: consumer pro-actively leaving the group
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-shopping-cart-group-1 unregistered
+2025-01-26 17:50:12 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: Consumer stopped
+2025-01-26 17:50:12 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-26 17:50:12 [RMI TCP Connection(13)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-26 17:50:12 [RMI TCP Connection(13)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-26 17:50:51 [main] INFO  c.e.s.p.PaymentServiceApplication - Starting PaymentServiceApplication using Java 21.0.4 on jayaseelan with PID 21976 (C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service\target\classes started by HP in C:\Users\HP\Downloads\Kafka-SpringBoot-Microservice-master\Kafka-SpringBoot-Microservice-master\payment-service)
+2025-01-26 17:50:51 [main] INFO  c.e.s.p.PaymentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-26 17:50:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 17:50:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2025-01-26 17:50:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-26 17:50:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2025-01-26 17:50:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2025-01-26 17:50:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2025-01-26 17:50:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-26 17:50:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-01-26 17:50:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-26 17:50:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1245 ms
+2025-01-26 17:50:53 [main] WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-26 17:50:53 [main] INFO  com.hazelcast.system - [192.168.1.15]:5701 [dev] [4.2.5] Hazelcast 4.2.5 (20220427 - 1dbec0d) starting at [192.168.1.15]:5701
+2025-01-26 17:50:53 [main] INFO  c.h.s.d.integration.DiscoveryService - [192.168.1.15]:5701 [dev] [4.2.5] No discovery strategy is applicable for auto-detection
+2025-01-26 17:50:53 [main] INFO  com.hazelcast.instance.impl.Node - [192.168.1.15]:5701 [dev] [4.2.5] Using Multicast discovery
+2025-01-26 17:50:53 [main] WARN  com.hazelcast.cp.CPSubsystem - [192.168.1.15]:5701 [dev] [4.2.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2025-01-26 17:50:53 [main] INFO  c.h.internal.diagnostics.Diagnostics - [192.168.1.15]:5701 [dev] [4.2.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-26 17:50:53 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5701 [dev] [4.2.5] [192.168.1.15]:5701 is STARTING
+2025-01-26 17:50:56 [main] INFO  c.h.internal.cluster.ClusterService - [192.168.1.15]:5701 [dev] [4.2.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.15]:5701 - f2407a62-3402-43f6-ac9c-938f113b90c3 this
+]
+
+2025-01-26 17:50:56 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.1.15]:5701 [dev] [4.2.5] [192.168.1.15]:5701 is STARTED
+2025-01-26 17:50:56 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-26 17:50:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-01-26 17:50:56 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-26 17:50:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-26 17:50:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-26 17:50:57 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-01-26 17:50:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-26 17:50:57 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-26 17:50:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-26 17:50:59 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-shopping-cart-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = shopping-cart-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.example.shoppingcart.payment.event.OrderPlacedDeserializer
+
+2025-01-26 17:50:59 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2025-01-26 17:50:59 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2025-01-26 17:50:59 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737885059281
+2025-01-26 17:50:59 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Subscribed to topic(s): order-placed
+2025-01-26 17:50:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2025-01-26 17:50:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2025-01-26 17:50:59 [main] INFO  c.e.s.p.PaymentServiceApplication - Started PaymentServiceApplication in 7.857 seconds (JVM running for 8.586)
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Resetting the last seen epoch of partition order-placed-0 to 0 since the associated topicId changed from null to 30Jq-_GES4u2zrpp-vWvpg
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Cluster ID: xXNfFJ7nRbiCPJ3X5HqIyg
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Discovered group coordinator jayaseelan:9092 (id: 2147483647 rack: null)
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] (Re-)joining group
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Request joining group due to: need to re-join with the given member-id
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] (Re-)joining group
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Successfully joined group with generation Generation{generationId=21, memberId='consumer-shopping-cart-group-1-39079291-750e-4eeb-88a1-9d8fb3048192', protocol='range'}
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Finished assignment for group at generation 21: {consumer-shopping-cart-group-1-39079291-750e-4eeb-88a1-9d8fb3048192=Assignment(partitions=[order-placed-0])}
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Successfully synced group in generation Generation{generationId=21, memberId='consumer-shopping-cart-group-1-39079291-750e-4eeb-88a1-9d8fb3048192', protocol='range'}
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Notifying assignor about the new Assignment(partitions=[order-placed-0])
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Adding newly assigned partitions: order-placed-0
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-shopping-cart-group-1, groupId=shopping-cart-group] Setting offset for partition order-placed-0 to the committed offset FetchPosition{offset=31, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[jayaseelan:9092 (id: 0 rack: null)], epoch=0}}
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - shopping-cart-group: partitions assigned: [order-placed-0]
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.s.impl.PaymentBusinessImpl - Entering PaymentBusinessImpl processPayment:
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.s.impl.PaymentBusinessImpl - Entering PaymentBusinessImpl save:
+2025-01-26 17:50:59 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.s.p.event.OrderPlacedConsumer - Payment successful for order ID: 20
