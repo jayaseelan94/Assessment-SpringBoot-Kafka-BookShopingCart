@@ -1,5 +1,5 @@
 # Kafka-SpringBoot-Microservice
-This project demonstrates a microservices architecture for a shopping cart system using Kafka for inter-service communication.
+This project demonstrates a microservices architecture for a Books shopping cart system using Kafka for inter-service communication.
 The system consists of two microservices: `cartService` and `PaymentService`, which communicate via Kafka using the "order-placed" event.
 
 ## Features
@@ -18,11 +18,14 @@ The project uses the following technologies and libraries:
 - Java
 - Spring Boot
 - Spring Data
-- Apache Kafka
-- H2 Database
-- MapStruct
-- OpenAPI
-- Lombok
+- Spring Microservices
+- Spring Swagger
+- Spring Test Junit,Mokito
+- Apache Kafka(Zookeeper)
+- MySql Database
+- HazelCast Catching
+- logback logger
+
 
 ## Getting Started
 
@@ -37,11 +40,14 @@ Follow these steps to get the project up and running:
           
    These steps establish ZooKeeper, start a Kafka broker, and create the "order-placed" topic for microservices communication.
 3. **Create an Order**:
-   To create an order and view the results in the payment service's console and payment table, perform the following steps:
+    To create an order and view the results in the payment service's console and payment table, perform the following steps:
    - Make an HTTP POST request to `http://localhost:8083/order/create` using the `order.http` file or `http://localhost:8083/swagger-ui/index.html`
    - In the request body, provide order details in JSON format.
-4. **Verify Results**:
-   - Check the payment service's console logs for payment processing messages.
+5. **Set Up Kafka and Topic**:
+   
+6. **Verify Results**:
+   - Check the payment service's result logs/cart-application.log for cart services same logs/payemnt-application.log for payment processing messages.
+   - once Cart order is created Kafka is triggered message on fiven topic and crete payment records. 
    - Inspect the payment database table to ensure that payment records are correctly stored.
 
 ## Usage
