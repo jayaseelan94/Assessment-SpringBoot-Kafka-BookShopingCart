@@ -1,0 +1,16 @@
+# Test CUSTOMER service
+Sample Data:
+  
+	{
+        "id": 3,
+        "orderId": 1,
+        "orderDate": "2025-01-26",
+        "totalPrice": 6000
+    }
+
+API methods:
+	Find-all : http://localhost:8084/payment/find-all
+	FindBy-id: http://localhost:8084/payment/2
+	Create   : http://localhost:8084/payment/create
+	update	 : http://localhost:8084/payment/2 
+	delete   : http://localhost:8084/payment/2
