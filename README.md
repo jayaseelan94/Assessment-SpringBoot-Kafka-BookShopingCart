@@ -50,7 +50,7 @@ Follow these steps to get the project up and running:
 5. **Create an Order**:
     To create an order and view the results in the payment service's console and payment table, perform the following steps:
    - Use the resource folder order.http file having the json sample inputs for all API's.
-   - Make an HTTP POST request to `http://localhost:8083/order/create` using the `order.http` file or `http://localhost:8083/swagger-ui/index.html`
+   - Kafka Producer make order HTTP POST request to `http://localhost:8083/order/create` using the `order.http` file or `http://localhost:8083/swagger-ui/index.html`
    - Kafka Consumer payment-cart `http://localhost:8085/payment/find-all` using the `payment.http` file or `http://localhost:8084/swagger-ui/index.html`
    - In the request body, provide order details in JSON format.
    
