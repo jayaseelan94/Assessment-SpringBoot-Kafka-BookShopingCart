@@ -39,11 +39,19 @@ Follow these steps to get the project up and running:
      - Create a topic named "order-placed".
           
    These steps establish ZooKeeper, start a Kafka broker, and create the "order-placed" topic for microservices communication.
-3. **Create an Order**:
+3. **Project Tables**:
+   Below tables are used to delvelop and stored datas. 
+      1. **Books** -> Product details  book_id,book_title,book_price,book_author,description.
+      2. **Customer** -> Customer details customer_id,cutomer_name,customer_email,cutomer_phone,cutomer_address and so on.
+      3. **Order_item** -> Order Item details sotred like order_item_id, order_quantity,order_price,book_id so on.
+      4. **Order** -> finally Orders consolidate this table Order_id,total_price,order_date,status.
+      
+      5. **Payment** -> Payment Table is the created Kafka this talbe is order_id,order_date,order_total_price.
+      
+5. **Create an Order**:
     To create an order and view the results in the payment service's console and payment table, perform the following steps:
    - Make an HTTP POST request to `http://localhost:8083/order/create` using the `order.http` file or `http://localhost:8083/swagger-ui/index.html`
    - In the request body, provide order details in JSON format.
-5. **Set Up Kafka and Topic**:
    
 6. **Verify Results**:
    - Check the payment service's result logs/cart-application.log for cart services same logs/payemnt-application.log for payment processing messages.
