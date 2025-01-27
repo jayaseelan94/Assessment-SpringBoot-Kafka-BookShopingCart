@@ -28,7 +28,6 @@ The project uses the following technologies and libraries:
 
 
 ## Getting Started
-
 Follow these steps to get the project up and running:
 
 1. **Clone the repository** to your local machine:
@@ -50,18 +49,17 @@ Follow these steps to get the project up and running:
       
 5. **Create an Order**:
     To create an order and view the results in the payment service's console and payment table, perform the following steps:
+   - Use the resource folder order.http file having the json sample inputs for all API's.
    - Make an HTTP POST request to `http://localhost:8083/order/create` using the `order.http` file or `http://localhost:8083/swagger-ui/index.html`
+   - Kafka Consumer payment-cart `http://localhost:8085/payment/find-all` using the `payment.http` file or `http://localhost:8084/swagger-ui/index.html`
    - In the request body, provide order details in JSON format.
    
-6. **Verify Results**:
+7. **Verify Results**:
    - Check the payment service's result logs/cart-application.log for cart services same logs/payemnt-application.log for payment processing messages.
-   - once Cart order is created Kafka is triggered message on fiven topic and crete payment records. 
+   - once Cart order is created Kafka is triggered message on given topic and crete payment records. 
    - Inspect the payment database table to ensure that payment records are correctly stored.
 
 ## Usage
-
 Once the microservices are running, they will communicate via Kafka using the "order-placed" event.
-
 To simulate an "order-placed" event, use the provided `OrderPlacedProducer` class in the `cartService` microservice.
-
 Monitor the console output for payment status messages in the `PaymentService` microservice.
