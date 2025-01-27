@@ -62,4 +62,5 @@ Follow these steps to get the project up and running:
 ## Usage
 Once the microservices are running, they will communicate via Kafka using the "order-placed" event.
 To simulate an "order-placed" event, use the provided `OrderPlacedProducer` class in the `cartService` microservice.
-Monitor the console output for payment status messages in the `PaymentService` microservice.
+To consume the message by @KafkaListener make payment.
+
