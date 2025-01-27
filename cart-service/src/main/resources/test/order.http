@@ -1,36 +1,73 @@
-# Test order service
+# Test CUSTOMER service
+Sample Data:
+  
+	{
+	  "firstName": "John",
+	  "lastName": "Doe",
+	  "email": "john.doe@example.com",
+	  "phoneNumber": "1234567890",
+	  "address": "123 Main Street, Springfield",
+	  "postalCode": "12345",
+	  "status": "ACTIVE",
+	  "gender": "MALE",
+	  "dateOfBirth": "1990-01-15"
+	}
 
-### call find by id order service
-GET http://localhost:8083/order/2
-Content-Type: application/json
+API methods:
+	Find-all : http://localhost:8083/customer/
+	FindBy-id: http://localhost:8083/customer/2
+	Create   : http://localhost:8083/customer/
+	update	 : http://localhost:8083/customer/2 
+	delete   : http://localhost:8083/customer/2
+	
+-----------------------------------------------------------------------------------------------------
+# Test BOOK service
+Sample Data:
+	{
+		"bookTitle": "The Great Gatsby",
+		"description": "A classic novel set in the Roaring Twenties, exploring themes of wealth and love.",
+		"bookPrice": 10.99,
+		"bookAuthor": "F. Scott Fitzgerald"
+	}
 
+API methods:
+	Find-all : http://localhost:8083/book/
+	FindBy-id: http://localhost:8083/book/2
+	Create   : http://localhost:8083/book/
+	update	 : http://localhost:8083/book/2 
+	delete   : http://localhost:8083/book/2
+  
+-----------------------------------------------------------------------------------------------------
+# Test ORDER-ITEM service
+Sample Data:
+	{
+	    "id": 3,
+	    "orderId": 1,
+	    "orderDate": "2025-01-26",
+	    "totalPrice": 6000
+	}
 
-### call save order service
-POST  http://localhost:8083/order/create
-Content-Type: application/json
+API methods:
+	Find-all : http://localhost:8083/order-item/find-all
+	FindBy-id: http://localhost:8083/order-item/2
+	Create   : http://localhost:8083/order-item/
+	update	 : http://localhost:8083/order-item/2 
+	delete   : http://localhost:8083/order-item/2
+  
+-----------------------------------------------------------------------------------------------------
+# Test ORDER service
+Sample Data:
+	{
+        "id": 6,
+        "orderItemId": 3,
+        "status": "CREATED",
+        "orderDate": "2023-02-06",
+        "totalPrice": 6000
+    }
 
-{
-  "customerId": 16,
-  "status": "CREATED",
-  "orderDate": "2023-02-06",
-  "totalPrice": 6000
-}
-
-###  call update order service
-PUT http://localhost:8083/order/update
-Content-Type: application/json
-
-{
-  "id": 4,
-  "name": "milk",
-  "description": "milk2222",
-  "price": 80
-}
-
-### call delete order service
-DELETE http://localhost:8083/order/5
-Content-Type: application/json
-
-### call find All order service
-GET http://localhost:8083/order/find-all
-Content-Type: application/json
+API methods:
+	Find-all : http://localhost:8083/order/find-all
+	FindBy-id: http://localhost:8083/order/2
+	Create   : http://localhost:8083/order/
+	update	 : http://localhost:8083/order/2 
+	delete   : http://localhost:8083/order/2
