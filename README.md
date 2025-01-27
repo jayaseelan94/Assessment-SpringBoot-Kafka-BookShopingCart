@@ -6,7 +6,9 @@ The system consists of two microservices: `cartService` and `PaymentService`, wh
 
 - **Microservices Architecture**: Clear separation of concerns.
 - **Kafka-based Communication**: Event-driven communication between microservices.
-- **Error Handling and Retries**: Ensures reliable message processing.
+- **Error Handling and Retries**: Ensures handle by @ControllerAdvice in GlobalException.java.
+- **Hazelcast Caching**: Usuing Hazelcast Catching all serviceImpl classes.
+- **Logs Using logback**: Using LoggerConfig logback-spring.xml to capture all logs and API Request and Response log too.
 - **Sample Code**: Includes producers, consumers, serializers, and deserializers.
 
 ## Prerequisites
