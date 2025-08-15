@@ -53,7 +53,8 @@ class BookServiceTest {
         // Arrange
         List<Book> mockBooks = Arrays.asList(
             new Book(1L, "New Book", "New Author",10.0,"Book Test"),
-            new Book(2L, "New Book", "New Author",12.0,"Book Test")
+            new Book(2L, "New Book", "New Author",12.0,"Book Test"),
+            new Book(3L, "New Book", "New Author",14.0,"Book Test")
         );
         when(bookRepository.findAll()).thenReturn(mockBooks);
 
